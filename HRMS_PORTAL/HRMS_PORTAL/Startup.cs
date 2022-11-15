@@ -23,6 +23,7 @@ namespace HRMS_PORTAL
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddRazorPages().AddRazorRuntimeCompilation();
             services.AddControllersWithViews();
         }
 
@@ -50,7 +51,7 @@ namespace HRMS_PORTAL
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
+                    pattern: "{controller=Login}/{action=HomePage}/{id?}");
             });
         }
     }

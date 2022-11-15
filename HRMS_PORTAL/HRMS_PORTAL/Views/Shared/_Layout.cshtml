@@ -6,29 +6,152 @@
     <title>@ViewData["Title"] - HRMS_PORTAL</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
+    <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+    <link href="~/css/Home.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+          rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">HRMS_PORTAL</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-danger " id="bg-img">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            &nbsp;&nbsp;
+            &nbsp;
+            <a class="navbar-brand" href="#"><h1 style="color:white;">KEKA</h1></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active mr-3">
+                    <a class="nav-link" href="#"><h1 style="color:white;">Forcebolt  Private LIMITED</h1><span class="sr-only">(current)</span></a>
+                </li>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <li class="nav-item">
+                    <form class="form-inline my-2 my-lg-0" style = "position:absolute; left:700px; top:20px;">
+                        <input class="form-control mr-sm-2" style="width: 400px; height: 50px; border-radius: 25px; top:100px;" type="search" placeholder="Search(Ex:-Id,Employee Name)" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style="width:120px;height:50px;color:white;border:none;"><h3>Search</h3></button>
+                    </form>
+                </li>
+            </ul>
+
+            <div class="btn-group">
+                <button type="button" style="width:250px;" class="btn btn-close-white " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <h4><b>Sandeep Kumar</b></h4>
                 </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
-                    </ul>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item" href="#">Profile</a>
+                    <a class="dropdown-item" href="#">Change Password</a>
+                    <a class="dropdown-item" href="#">Logout</a>
                 </div>
             </div>
-        </nav>
-    </header>
+        </div>
+    </nav>
+    <!-- Side Bar-->
+    <div class="container-fluid" >   
+        <div class="row flex-nowrap">
+            <div class="col-auto col-md-1 col-xl-1 px-sm-1 pt-lg-3 bg-danger" id="bg-img" style="width: 150px;">
+                <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
+                    <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
+                        <li>
+                            <div class="btn-group dropright">
+                                <button type="button" style="width:120px;" class="btn btn-close-white" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <h4>Home</h4>
+                                </button>
+                                
+                            </div>
+                            <br/><br />
+                        </li>
+                        <li>
+                            <div class="btn-group dropright">
+                                <button type="button" style="width:120px;" class="btn btn-close-white" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <h4>Me</h4>
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                    <a class="dropdown-item" href="#">Profile</a>
+                                    <a class="dropdown-item" href="#">Change Password</a>
+                                    <a class="dropdown-item" href="#">Logout</a>
+                                </div>
+                            </div>
+                            <br /><br />
+                        </li>
+                        <li>
+                            <div class="btn-group dropright">
+                                <button type="button" style="width:120px;" class="btn btn-close-white" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <h4>Inbox</h4>
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                    <a class="dropdown-item" href="#">Profile</a>
+                                    <a class="dropdown-item" href="#">Change Password</a>
+                                    <a class="dropdown-item" href="#">Logout</a>
+                                </div>
+                            </div>
+                            <br /><br />
+                        </li>
+                        <li>
+                            <div class="btn-group dropright">
+                                <button type="button" style="width:120px;" class="btn btn-close-white" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <h4>MyTeam</h4>
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                    <a class="dropdown-item" href="#">Profile</a>
+                                    <a class="dropdown-item" href="#">Change Password</a>
+                                    <a class="dropdown-item" href="#">Logout</a>
+                                </div>
+                            </div>
+                            <br /><br />
+                        </li>
+
+                        <li>
+                            <div class="btn-group dropright">
+                                <button type="button" style="width:120px;" class="btn btn-close-white" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <h4>Finance</h4>
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                    <a class="dropdown-item" href="#">Profile</a>
+                                    <a class="dropdown-item" href="#">Change Password</a>
+                                    <a class="dropdown-item" href="#">Logout</a>
+                                </div>
+                            </div>
+                            <br /><br />
+                        </li>
+                        <li>
+                            <div class="btn-group dropright">
+                                <button type="button" style="width:120px;" class="btn btn-close-white" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <h4>Org</h4>
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                    <a class="dropdown-item" href="#">Profile</a>
+                                    <a class="dropdown-item" href="#">Change Password</a>
+                                    <a class="dropdown-item" href="#">Logout</a>
+                                </div>
+                            </div>
+                            <br /><br />
+                        </li>
+                        <li>
+                            <div class="btn-group dropright">
+                                <button type="button" style="width:120px;text-align:left" class="btn btn-close-white" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <h4>Inventory</h4>
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                    <a class="dropdown-item" href="#">Profile</a>
+                                    <a class="dropdown-item" href="#">Change Password</a>
+                                    <a class="dropdown-item" href="#">Logout</a>
+                                </div>
+                            </div>
+                            <br /><br />
+                        </li>
+                    </ul>
+                    </div>
+                </div>
+            <div class="col py-3">
+                Content area...
+            </div>
+        </div>
+    </div>
+
+
+
+
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
@@ -37,7 +160,7 @@
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2022 - HRMS_PORTAL - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            &copy; 2022 - HMS - <a asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
